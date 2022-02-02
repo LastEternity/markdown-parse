@@ -27,21 +27,21 @@ public class MarkdownParseTest {
 
     @Test
     public void testFile1() throws Exception {
-        assertEquals(fileMap.get("test-file1.md"), MarkdownParse.getLinks(Files.readString(Path.of("C:/Users/adria/Desktop/CSE15L/markdown-parse/test-file1.md"))));
+        assertEquals(fileMap.get("test-file1.md"), MarkdownParse.getLinks(Files.readString(Path.of("test-file1.md"))));
     }
 
     @Test
     public void testFile2() throws Exception {
-        assertEquals(fileMap.get("test-file2.md"), MarkdownParse.getLinks(Files.readString(Path.of("C:/Users/adria/Desktop/CSE15L/markdown-parse/test-file2.md"))));
+        assertEquals(fileMap.get("test-file2.md"), MarkdownParse.getLinks(Files.readString(Path.of("test-file2.md"))));
     }
 
     @Test
     public void testFile3() throws Exception {
-        assertEquals(fileMap.get("test-file3.md"), MarkdownParse.getLinks(Files.readString(Path.of("C:/Users/adria/Desktop/CSE15L/markdown-parse/test-file3.md"))));
+        assertEquals(fileMap.get("test-file3.md"), MarkdownParse.getLinks(Files.readString(Path.of("test-file3.md"))));
     }
 
     @Test
     public void testFile4() throws Exception {
-        assertEquals(fileMap.get("test-file4.md"), MarkdownParse.getLinks(Files.readString(Path.of("C:/Users/adria/Desktop/CSE15L/markdown-parse/test-file4.md"))));
+        assertEquals(fileMap.get("test-file4.md"), MarkdownParse.getLinks(Files.readString(Path.of("test-file4.md"))));
     }
 }
