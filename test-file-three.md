@@ -1,4 +1,4 @@
-Testing an array of [1, 2, 3, 4, 5] followed by parenthesis (because it hasn't been substantiated)
+This is an example array: [0, 1, 2, 3, 4]; however, it isn't functional (because it hasn't been substantiated). So, we need to improve it.
 
-[Link](https://something.com)
-[Link](some-page.html)
+[a link!](https://something.com)
+[another link!](some-page.html)
