@@ -24,7 +24,6 @@ public class MarkdownParse {
             }
         
             if(checkIfOpenBracket && markdown.charAt(closeParen) == ']'){
-                System.out.println("Ran");
                 return -2;
             }
             
