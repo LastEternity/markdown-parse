@@ -44,18 +44,19 @@ public class MarkdownParseTest {
         assertEquals(fileMap.get("test-file3.md"), MarkdownParse.getLinks(Files.readString(Path.of("test-file3.md"))));
     }
     
+    
     @Test
-    public void snippet1.md throws Exception {
+    public void snippet1() throws Exception {
         assertEquals(fileMap.get("snippet1.md"), MarkdownParse.getLinks(Files.readString(Path.of("snippet1.md"))));
     }
     
     @Test
-    public void snippet2.md throws Exception {
+    public void snippet2() throws Exception {
         assertEquals(fileMap.get("snippet2.md"), MarkdownParse.getLinks(Files.readString(Path.of("snippet2.md"))));
     }
     
     @Test
-    public void snippet3.md throws Exception {
+    public void snippet3() throws Exception {
         assertEquals(fileMap.get("snippet3.md"), MarkdownParse.getLinks(Files.readString(Path.of("snippet3.md"))));
     }
 
