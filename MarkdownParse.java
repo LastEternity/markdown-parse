@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.io.File;
 
 public class MarkdownParse {
 
@@ -74,8 +75,20 @@ public class MarkdownParse {
 
     public static void main(String[] args) throws IOException {
 		Path fileName = Path.of(args[0]);
-	    String contents = Files.readString(fileName);
-        ArrayList<String> links = getLinks(contents);
-        System.out.println(links);
+        if(Files.isDirectory(fileName)){
+            File toConvert = fileName.toFile();
+            File[] dir = toConvert.listFiles();
+            for(File f : dir){
+                Path toExamine = f.toPath();
+                String contents = Files.readString(toExamine);
+                ArrayList<String> links = getLinks(contents);
+                System.out.println(links);
+            }
+        }
+        else{
+            String contents = Files.readString(fileName);
+            ArrayList<String> links = getLinks(contents);
+            System.out.println(links);
+        }
     }
 }
